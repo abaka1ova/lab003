@@ -14,6 +14,9 @@ for i in range(0, n):
     element = int(input("arr[" + str(i + 1) + "] = "))
     m.append(element)
 
-print("Sorted array: ")
 bubble_sort(m)
+napr = int(input("По возрастанию - 0, по убыванию - 1: "))
+if napr == 1:
+    m.reverse()
+print("Sorted array: ")
 print(m)
